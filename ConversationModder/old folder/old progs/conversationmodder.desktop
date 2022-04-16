@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Conversation Modder
+Comment=modify_conversations
+Exec=sh /usr/bin/conversation_mdder.sh
+Icon=""

@@ -1,0 +1,204 @@
+/**
+ * Style rules for the MessageBuffer
+ */
+
+/**
+ * the body defaults
+ */
+body {
+  word-wrap: break-word;
+  margin-left: 16px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+/**
+ * The table column formats
+ */
+
+div.Message * {
+  white-space:   normal;
+}
+
+#MessagingArea {
+  vertical-align: top;
+}
+
+div.Message {
+  clear:	 both;
+  white-space:   nowrap;
+  vertical-align: middle;
+}
+
+div.Message.Self {
+}
+
+div.Message.Other {
+}
+
+div.Message:first-child {
+  padding-top: 0px;
+}
+
+div.Message:last-child {
+  padding-bottom: 0px;
+}
+
+div.BubbleSelf {
+  vertical-align: top;
+  width: 100%;
+  display: inline-block;
+}
+
+div.MessageContainerOther { 
+}
+
+div.BubbleOther {
+  vertical-align: top;
+  width: 100%;
+  display: inline-block;
+}
+
+/**
+ * Others' Avatars
+ *
+ * This needs a "drop down" shadow, but no idea if that can be done
+ *Adele: please note that this drop down shadow might be subjected to change
+ *I've talked about it with Vilja who's in charge of address book layout
+ *and we might change it so that it's a double border colour to indicate
+ *that the avatar is clickable. drop shawdow doesn't seem to work with
+ *dark backgrounds unless it's a light colour drop shadow.
+ *PLEASE tell me if it's difficult to implement the drop shadow.
+ */
+
+div.Avatar {
+  margin: 0px 16px 0px 0px; /* top right bottom left */
+  padding: 8px 0px;
+  width: 80px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.MessageAvatar {
+  width: 80px;
+  height:80px;
+  outline-style: solid;
+  outline-width: 4px;
+  -moz-outline-radius: 8px;
+}
+
+div.MessageAvatarBorder {
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: inline-block;
+  -moz-border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+div.MessagePresenceBox {
+  width: 24px;
+  padding: 8px 0px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+span.MessagePresence { 
+  width: 24px;
+  display: inline-block;
+}
+
+img.MessagePresence {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+
+/**
+ * the Name field
+ */
+span.MessageNameField {
+  word-wrap: break-word;
+  vertical-align: middle;
+  padding: 0px;
+  margin: 0px;
+}
+
+span.MessageNameField.Self {
+}
+
+span.MessageNameField.Other {
+}
+
+/**
+ * the Text field
+ */
+div.MessageText {
+  border-top-style: solid;
+  border-top-width: 2;
+  padding-top: 8px;
+  margin-top: 8px;
+  display: block;
+  text-align: left;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+.MessageText.Other {
+  width: 100%;
+}
+
+.MessageText.Self {
+  width: 100%;
+}
+
+/**
+ * the NameSeparator field
+ */
+span.MessageNameSeparator {
+  vertical-align: middle;
+}
+
+.MessageSeparator {
+  visibility: hidden;
+}
+
+/**
+ * the TimeStamp default rules
+ */
+div.MessageTop {
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+div.MessageTop.Self {
+}
+
+div.MessageTop.Other {
+  display: block;
+}
+
+img.MessageBusinessCardImg {
+  vertical-align: middle;
+  padding-right: 4px;
+}
+
+span.MessageTimeStamp {
+}
+
+span.MessageDeliveryTimeStamp {
+}
+
+img.MessageStatusImg {
+  vertical-align: middle;
+  padding-right: 0px;
+}
+
+.MessagingWidgetsSmiley {
+  height: 24px;
+  width: 24px;
+}

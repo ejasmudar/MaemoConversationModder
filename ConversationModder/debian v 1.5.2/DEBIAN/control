@@ -1,0 +1,10 @@
+Package: conversationmodder
+XSBC-Maemo-Display-Name: Conversation Modder
+Section: user/Utilities+
+Installed-Size:15
+Version: 1.5.2
+Priority: extra
+Maintainer: Ejas Mudar <ejasmudar@gmail.com>
+Architecture: all
+Description: Utlilty to modify Messaging App
+.

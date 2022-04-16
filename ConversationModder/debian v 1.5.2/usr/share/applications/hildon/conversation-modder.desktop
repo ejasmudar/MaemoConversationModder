@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.5
+Type=Application
+Categories=Utilities
+Name=Conversation-Modder
+Comment=modify_conversations
+Exec=sh /opt/conversationmodder/conversation_modder.sh
+Icon=""

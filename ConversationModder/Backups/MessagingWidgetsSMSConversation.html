@@ -1,0 +1,48 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- messaging-widgets -->
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="MessagingWidgetsSMSConversation.css"></link>
+    <link rel="stylesheet" type="text/css" href="/etc/hildon/theme/css/colors.css" id="ThemeCSSLink"></link>
+    <script type="text/javascript" src="MessagingWidgetsSMSConversation.js"></script>
+</head>
+
+<!-- Preserve the tag IDs. Everything else can be changed  and rearranged -->
+
+<body class="DefaultBackgroundColor DefaultTextColor SystemFont" onload="MessagingWidgetsSMSConversation_init()">
+<div id="MessageContainerSelf" class="Message Self">
+  <div id="MessageSelf" class="MessagingBubbleSelfBackgroundColor MessagingBubbleBorderColor BubbleSelf">
+    <span id="MessageSenderNameSelf" class="MessageNameField AccentColor2 Self"></span>
+    <span id="MessageTextSelf" class="MessageText Self"></span>
+    <div class="MessageRight Self">
+      <img id="MessageBusinessCardImgSelf" class="MessageBusinessCardImg" src=""/>
+      <span id="MessageTimeStampSelf" class="MessageTimeStamp SecondaryTextColor Self SmallSystemFont">12:30 PM</span>
+      <span id="MessageDeliveryTimeStampSelf" class="MessageDeliveryTimeStamp SecondaryTextColor Self SmallSystemFont"> | 1:30 PM</span>
+      <img id="MessageStatusImgSelf" class="MessageStatusImg" src=""/>
+    </div>
+  </div>
+</div>
+<div id="MessageContainerOther" class="Message Other">
+  <div class="Avatar">
+    <div id="AvatarImgOther" class="MessageAvatar MessagingAvatarBorderColor DefaultBackgroundColor "></div>
+  </div>
+  <div id="MessageOther" class="MessagingBubbleOtherBackgroundColor MessagingBubbleBorderColor BubbleOther">
+   <div class="BubbleSpacer">
+    <img id="MessagePresenceOther" src="" class="MessagePresence"/>
+    <span id="MessageSenderNameOther" class="MessageNameField AccentColor1 Other"></span>
+    <span id="MessageTextOther" class="MessageText Other"></span>
+    <div class="MessageRight Other">
+      <img id="MessageBusinessCardImgOther" class="MessageBusinessCardImg" src=""/>
+      <span id="MessageTimeStampOther" class="MessageTimeStamp SecondaryTextColor Other SmallSystemFont">12:30 PM</span>
+      <span id="MessageDeliveryTimeStampOther" class="MessageDeliveryTimeStamp SecondaryTextColor Other SmallSystemFont"> | 1:30 PM</span>
+      <img id="MessageStatusImgOther" class="MessageStatusImg" src=""/>
+     </div>
+   </div>
+  </div>
+</div>
+</body>
+</html>

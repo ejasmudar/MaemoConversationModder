@@ -1,0 +1,87 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- messaging-widgets -->
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="MessagingWidgetsChatConversation.css"></link>
+    <link rel="stylesheet" type="text/css" href="/etc/hildon/theme/css/colors.css" id="ThemeCSSLink"></link>
+    <link rel="stylesheet" type="text/css" href="" id="ThemeCSSLinkUser"></link>
+    <script type="text/javascript" src="MessagingWidgetsDebug.js"></script>
+    <script type="text/javascript" src="MessagingWidgetsChatConversation.js"></script>
+</head>
+
+<!-- Preserve the tag IDs. Everything else can be changed  and rearranged -->
+
+<body class="DefaultBackgroundColor DefaultTextColor SystemFont " onload="MessagingWidgetsChatConversation_init()">
+<div id="MessageContainerSelf" class="Message MessageNormal Self" style="display:none">
+  <div class="MessageAvatar MessageAvatarSelf"><div id="AvatarImgBorderSelf" class="MessageAvatarBorder Self MessagingAvatarBorderColor"></div>
+    <img id="AvatarImgSelf" src="" class="MessageAvatar MessagingAvatarBorderMaskColor " />
+  </div>
+  <div id="MessageAvatarAlternativeSelf" class="MessageAvatar MessageAvatarAlternative" style="display:none;"></div>
+   <div id="MessageSelf" class="Bubble BubbleNormal"><div class="InnerBubble">
+    <img id="MessagePresenceSelf" src="" width="16" height="16" class="MessagePresence" />
+    <span id="MessageSenderNameSelf" class="MessageNameField EmpSystemFont AccentColor2"></span>
+    <span id="MessageTextSelf" class="MessageText Self"></span>
+    <span class="MessageRight">
+      <span id="MessageTimeStampSelf" class="MessageTimeStamp SecondaryTextColor Self SmallSystemFont" style="display: inline-block;"></span>
+    </span>
+    <div class="vertical left"></div><div class="vertical right"></div><div class="horizontal top"></div><div class="horizontal bottom"></div>
+    <div class="corner top-left"></div><div class="corner top-right"></div><div class="corner bottom-left"></div><div class="corner bottom-right"></div>
+    <div class="self-point"></div>
+   </div>
+  </div>
+</div>
+<div id="MessageContainerOther" class="Message MessageNormal Other" style="display:none">
+  <div class="MessageAvatar MessageAvatarOther"><div id="AvatarImgBorderOther" class="MessageAvatarBorder Other MessagingAvatarBorderColor"></div>
+    <img id="AvatarImgOther" src="" class="MessageAvatar MessagingAvatarBorderMaskColor " />
+  </div>
+  <div id="MessageAvatarAlternativeOther" class="MessageAvatar MessageAvatarAlternative" style="display:none;"></div>
+   <div id="MessageOther" class="Bubble BubbleNormal"><div class="InnerBubble">
+    <img id="MessagePresenceOther" src="" width="16" height="16" class="MessagePresence" />
+    <span id="MessageSenderNameOther" class="MessageNameField EmpSystemFont AccentColor1"></span>
+    <span id="MessageTextOther" class="MessageText Other"></span>
+    <span class="MessageRight">
+      <span id="MessageTimeStampOther" class="MessageTimeStamp SecondaryTextColor Other SmallSystemFont" style="display: inline-block;"></span>
+    </span>
+    <div class="vertical left"></div><div class="vertical right"></div><div class="horizontal top"></div><div class="horizontal bottom"></div>
+    <div class="corner top-left"></div><div class="corner top-right"></div><div class="corner bottom-left"></div><div class="corner bottom-right"></div>
+    <div class="other-point"></div>
+   </div>
+  </div>
+</div>
+<div id="MessageContainerNotice" class="Message MessageNotice EmpSystemFont SecondaryTextColor" style="display:none">
+  <div id="MessageNotice" class="Bubble BubbleNotice"><div class="InnerBubbleNotice">
+    <span id="MessageTextNotice" class="MessageText "></span>
+  </div></div>
+</div>
+<div id="MessageContainerAction" class="Message MessageAction Action EmpSystemFont" style="display:none">
+  <div class="MessageAvatar MessageAvatarAction"><div id="AvatarImgBorderAction" class="MessageAvatarBorder Action MessagingAvatarBorderColor"></div>
+    <img id="AvatarImgAction" src="" class="MessageAvatar MessagingAvatarBorderMaskColor " />
+  </div>
+  <div id="MessageAvatarAlternativeAction" class="MessageAvatar MessageAvatarAlternative" style="display:none;"></div>
+  <div id="MessageAction" class="Bubble BubbleAction"><div class="InnerBubble InnerBubble">
+    <img id="MessagePresenceAction" src="" width="16" height="16" class="MessagePresence" />
+    <span id="MessageSenderNameAction" class="MessageNameField EmpSystemFont Action"></span>
+    <span id="MessageTextAction" class="MessageText Action"></span>
+    <span class="MessageRight">
+      <span id="MessageTimeStampAction" class="MessageTimeStamp SecondaryTextColor Action SmallSystemFont" style="display: inline-block;"></span>
+     </span>
+  </div></div>
+</div>
+<div id="MessageContainerAutoReply" class="Message MessageAutoReply Self" style="display:none;">
+  <div class="MessageAvatar"><div id="AvatarImgBorderAutoReply" class="MessageAvatarBorder Self MessagingAvatarBorderColor"></div>
+    <img id="AvatarImgAutoReply" src="" class="MessageAvatar MessagingAvatarBorderMaskColor " />
+  </div>
+  <div id="MessageAutoReply" class="Bubble"><div class="InnerBubble InnerBubbleAutoReply">
+    <span id="MessageSenderNameAutoReply" class="MessageNameField EmpSystemFont AccentColor1"></span>
+    <span id="MessageTextAutoReply" class="MessageText Self"></span>
+    <span class="MessageRight">
+      <span id="MessageTimeStampAutoReply" class="MessageTimeStamp SecondaryTextColor Self SmallSystemFont" style="display: inline-block;"></span>
+    </span>
+  </div></div>
+</div>
+</body>
+</html>

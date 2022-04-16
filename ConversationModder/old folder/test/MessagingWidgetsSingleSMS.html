@@ -1,0 +1,53 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- messaging-widgets -->
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="MessagingWidgetsSingleSMS.css"></link>
+    <link rel="stylesheet" type="text/css" href="/etc/hildon/theme/css/colors.css" id="ThemeCSSLink"></link>
+    <script type="text/javascript" src="MessagingWidgetsSingleSMS.js" charset="UTF-8"></script>
+</head>
+
+<!-- Preserve the tag IDs. Everything else can be changed  and rearranged -->
+
+<body class="nodebug DefaultBackgroundColor DefaultTextColor SystemFont" onload="MessagingWidgetsSingleSMS_init()">
+<div id="MessagingArea">
+<div id="MessageContainerSelf" class="Message Self" style="display:none;">
+  <div id="MessageSelf" class="BubbleSelf">
+    <div class="MessageTop Self">
+      <div id="MessageSenderNameSelf" class="MessageNameField SecondaryTextColor LargeSystemFont Self"></div>
+      <img id="MessageBusinessCardImgSelf" class="MessageBusinessCardImg" src=""/>
+      <span id="MessageTimeStampSelf" class="MessageTimeStamp SecondaryTextColor Self SmallSystemFont"></span>
+      <span id="MessageDeliveryTimeStampSelf" class="MessageDeliveryTimeStamp PrimaryTextColor Self SmallSystemFont"></span>
+      <span id="MessageStatusSelf" class="MessageStatus PrimaryTextColor"></span>
+    </div>
+    <div id="MessageTextSelf" class="MessageText Self MessagingBubbleBorderColor"></div>
+  </div>
+</div>
+<div id="MessageContainerOther" class="Message Other" style="display:none;">
+  <div id="MessageOther" class="BubbleOther">
+    <div class="Avatar">
+      <div id="AvatarImgBorderOther" class="MessageAvatarBorder Other MessagingAvatarBorderColor"></div>
+        <img id="AvatarImgOther" src="" class="MessageAvatar MessagingAvatarBorderMaskColor " />
+      </div>
+    <div style="display:inline-block;">
+      <div id="MessagePresenceBoxOther" class="MessagePresenceBox">
+        <span class="MessagePresence"><img id="MessagePresenceOther" src="" class="MessagePresence"/></span>
+      </div>
+      <span id="MessageSenderNameOther" class="MessageNameField SecondaryTextColor LargeSystemFont Other"></span>
+      <div class="MessageTop Other">
+        <img id="MessageBusinessCardImgOther" class="MessageBusinessCardImg" src=""/>
+        <span id="MessageTimeStampOther" class="MessageTimeStamp SecondaryTextColor Other SmallSystemFont"></span>
+        <span id="MessageDeliveryTimeStampOther" class="MessageDeliveryTimeStamp PrimaryTextColor Other SmallSystemFont"></span>
+        <span id="MessageStatusOther" class="MessageStatus PrimaryTextColor"></span>
+      </div>
+    </div>
+    <div id="MessageTextOther" class="MessageText Other MessagingBubbleBorderColor"></div>
+  </div>
+</div>
+</div>
+</body>
+</html>
